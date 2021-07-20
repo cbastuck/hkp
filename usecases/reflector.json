@@ -1,0 +1,57 @@
+{
+  "version": "2.0",
+  "topology": {
+    "type": "chain"
+  },
+  "runtimes": [
+    {
+      "id": "0f4dfa37-ac5c-4a50-8abf-a7ded3f7f620",
+      "name": "Runtime",
+      "type": "node",
+      "services": [
+        {
+          "serviceName": "Ingress",
+          "serviceId": "hookup.to/service/ingress",
+          "uuid": "967d5610-40f2-41fd-a1eb-236fc4d2fd7c",
+          "path": "in",
+          "op": "POST",
+          "active": true,
+          "wrapHeaders": true,
+          "isPublic": false
+        },
+        {
+          "serviceName": "Map",
+          "serviceId": "hookup.to/service/map",
+          "template": {
+            "topic=": "params.headers['reflector-topic']",
+            "data=": "params.data || params",
+            "ip=": "params.headers['x-forwarded-for']"
+          }
+        },
+        {
+          "serviceName": "Monitor",
+          "serviceId": "hookup.to/service/monitor",
+          "active": false
+        },
+        {
+          "serviceName": "Websocket",
+          "serviceId": "hookup.to/service/websocket",
+          "uuid": "7b16343b-302c-44c6-980d-cd0e151d9bf8",
+          "name": "out",
+          "keepAlive": true,
+          "isPublic": true
+        },
+        {
+          "serviceName": "Hasher",
+          "serviceId": "hookup.to/service/hasher",
+          "property": "data"
+        },
+        {
+          "serviceName": "Log",
+          "serviceId": "hookup.to/service/log",
+          "filename": "reflector-log.txt"
+        }
+      ]
+    }
+  ]
+}
