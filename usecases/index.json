@@ -1,4 +1,16 @@
 [
+  {
+    "name": "Slideshow",
+    "template": "https://raw.githubusercontent.com/cbastuck/hkp/master/usecases/slideshow-canvas.json&sender-board=%random-name%",
+    "description": "Display photos coming from a peer injector board",
+    "repo": "https://github.com/cbastuck/hkp/blob/master/usecases/slideshow-canvas.json"
+  },
+  {
+    "name": "Game",
+    "template": "https://raw.githubusercontent.com/cbastuck/hkp/master/usecases/game.json&sender-board=%random-name%",
+    "description": "Hookup another device as controller to play an simplified old-school game.",
+    "repo": "https://github.com/cbastuck/hkp/blob/master/usecases/game.json"
+  },
   { 
     "name": "Reflector Sender", 
     "template": "https://raw.githubusercontent.com/cbastuck/hkp/master/usecases/reflector-sender.json",
