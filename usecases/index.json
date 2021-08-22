@@ -13,7 +13,12 @@
   {
     "name": "Game",
     "template": "https://raw.githubusercontent.com/cbastuck/hkp/master/usecases/game.json&sender-board=%random-name%",
-    "description": "Hookup another device as controller to play an simplified old-school game.",
+    "description": [
+      "Use your phone as an input controller for a simple game.",
+      "The game is devided into three runtimes: input, logic and output.",
+      "Initially all three runtimes are on the same board.",
+      "Connect your phone as an input by scanning the QR code on the bottom, then inject movement events."
+    ],
     "repo": "https://github.com/cbastuck/hkp/blob/master/usecases/game.json"
   },
   { 
