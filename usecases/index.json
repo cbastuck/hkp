@@ -2,7 +2,12 @@
   {
     "name": "Slideshow",
     "template": "https://raw.githubusercontent.com/cbastuck/hkp/master/usecases/slideshow-canvas.json&sender-board=%random-name%",
-    "description": "Display photos coming from a peer injector board",
+    "description": [
+      "Show photos you made with your phone to friends you invited.",
+      "Launch this board on a device with a big screen, a TV for example.",
+      "Scan the QR code on the bottom with the phone and inject photos you want to show from there.",
+      "Once you see photos arriving, make sure to switch the canvas service into fullscreen by double clicking"
+    ],
     "repo": "https://github.com/cbastuck/hkp/blob/master/usecases/slideshow-canvas.json"
   },
   {
