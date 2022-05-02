@@ -24,10 +24,21 @@
     ]
   },
   "description": [
+    {
+      "type": "headline",
+      "text": "Important Note"
+    },
     [
-      { "type": "headline", "text": "Important Note" },
-      { "type": "link" , "href": "https://github.com/cbastuck/hkp/blob/master/usecases/reflector.json", "text": "Reflector" },
-      { "type": "check", "text": "backend is currently online?", "url": "%http-host%/api/ready" }
+      {
+        "type": "link",
+        "href": "https://github.com/cbastuck/hkp/blob/master/usecases/reflector.json",
+        "text": "Reflector"
+      },
+      {
+        "type": "check",
+        "text": "backend is currently online?",
+        "url": "%http-host%/api/ready"
+      }
     ]
   ]
 }
