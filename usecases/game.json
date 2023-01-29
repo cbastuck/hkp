@@ -11,6 +11,9 @@
       "type": "browser",
       "params": {
         "minimized": true
+      },
+      "state": {
+        "minimized": true
       }
     },
     {
@@ -73,13 +76,7 @@
           "dY=": "((params.ballY < 190 && params.ballY + params.dY >= 190 && params.ballX >= params.barX && params.ballX <= params.barX+70) || (params.ballY+params.dY < 20)) ? params.dY * -1 : params.dY",
           "ballX=": "params.triggerCount ? params.ballX + params.dX : params.ballX",
           "ballY=": "params.ballY > 200 ? 50 : (params.triggerCount ? params.ballY + params.dY : params.ballY)",
-          "cacheProperties+": [
-            "ballX",
-            "ballY",
-            "barX",
-            "dX",
-            "dY"
-          ]
+          "cacheProperties+": ["ballX", "ballY", "barX", "dX", "dY"]
         },
         "serviceId": "hookup.to/service/map",
         "serviceName": "Map"
@@ -128,7 +125,8 @@
         "board": "Playground",
         "fullscreen": false,
         "clearOnRedraw": true,
-        "resizable": false
+        "resizable": false,
+        "size": [300, 190]
       }
     ]
   },
