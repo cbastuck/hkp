@@ -3,7 +3,10 @@
     {
       "id": "RT1",
       "name": "injector-runtime",
-      "type": "browser"
+      "type": "browser",
+      "state": {
+        "wrapServices": false
+      }
     }
   ],
   "services": {
@@ -19,7 +22,7 @@
         "board": "xy-controller-game",
         "mode": "replace",
         "template": {
-          "absX=": "params.x * 250"
+          "relX=": "params.x"
         },
         "serviceId": "hookup.to/service/map",
         "serviceName": "Map"
